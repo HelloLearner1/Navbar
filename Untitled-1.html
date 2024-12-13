@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link rel="stylesheet" href="NavbarDL2 css.css">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Container */
+    .navbar-1 {
+      font-family: Arial, sans-serif;
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* First Line of Navbar */
+    .top-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #fff;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .logo span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+      width: 300px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 8px;
+    }
+
+    .search-bar img {
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .search-button:hover {
+      background-color: #0056b3;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .separator {
+      width: 1px;
+      height: 20px;
+      background-color: #ccc;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .icons img {
+      height: 25px;
+      cursor: pointer;
+    }
+
+    /* Second Line of Navbar */
+    .bottom-line {
+      background-color: #f9f9f9;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid #ddd;
+    }
+
+    .category-box {
+      display: flex;
+      gap: 15px;
+    }
+
+    .category {
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #333;
+      transition: background-color 0.3s;
+    }
+
+    .category:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .dark-line {
+      height: 2px;
+      background-color: #000;
+    }
+
+    /* Third Line and its Content */
+    .third-line {
+      background-color: #fff;
+      padding: 20px 0;
+    }
+
+    .mobile-accessories-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      text-align: left;
+    }
+
+    .category-heading {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .third-line .category-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .category-heading + .category-box {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar-1">
+    <!-- First Line of Navbar -->
+    <div class="top-line">
+      <!-- Logo Section -->
+      <div class="logo">
+        <img src="F:/Nishika/Download/Wolfx/Company Logo.png" alt="Company Logo" />
+        <span>Company Logo</span>
+      </div>
+      
+      <!-- Search Bar Section -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search Product" />
+        <img src="F:/Nishika/Download/Wolfx/Union.png" alt="Search Icon" />
+      </div>
+      
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="#search-products" class="search-button">Search</a>
+        <div class="separator"></div>
+        <a href="#about-us">About Us</a>
+        <div class="separator"></div>
+        <a href="#blogs">Blogs</a>
+        <div class="separator"></div>
+        <a href="#support">Support</a>
+      </div>
+
+      <!-- Icons Section -->
+      <div class="icons">
+        <img src="F:/Nishika/Download/Wolfx/shopping-bag.png" alt="Shopping Bag" />
+        <img src="F:/Nishika/Download/Wolfx/user-circle.png" alt="User Icon" />
+      </div>
+    </div>
+    
+    <!-- Second Line (Product Categories) -->
+    <div class="bottom-line">
+      <div class="category-box">
+        <div class="category">Women Ethnic</div>
+        <div class="category">Women Western</div>
+        <div class="category">Men's</div>
+        <div class="category">Kids</div>
+        <div class="category">Beauty & Health</div>
+        <div class="category">Jewellery & Accessories</div>
+        <div class="category">Bags & Footwear</div>
+        <div class="category">Electronics</div>
+      </div>
+    </div>
+    <div class="dark-line"></div>
+
+    <!-- Third Line (Mobile Accessories Section) -->
+    <div class="third-line">
+      <div class="mobile-accessories-section">
+        <div>
+          <div class="category-heading">Mobile Accessories</div>
+          <div class="category-box">
+            <div class="category">All Mobile & Accessories</div>
+            <div class="category">Smart Watches</div>
+            <div class="category">Mobile Holders</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="category-heading">Mobile Accessories Including</div>
+          <div class="category-box">
+            <div class="category">Power Banks</div>
+            <div class="category">Earphones & Headphones</div>
+            <div class="category">Chargers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
